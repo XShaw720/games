@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OhDarn</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table">
+      <tr>
+        <th class="show" id="2">Players</th>
+        <th class="hide">Bid</th>
+        <th class="hide">Tricks</th>
+        <th class="hide">Score</th>
+      </tr>
+      <tr>
+        <th><input id="input1" placeholder="name" /></th>
+      </tr>
+      <tr>
+        <th><input id="input2" placeholder="name" /></th>
+      </tr>
+      <tr>
+        <th><input id="input3" placeholder="name" /></th>
+      </tr>
+      <!-- <tr>
+        <th class="hide"><input id="bid" placeholder="0" /></th>
+      </tr>
+      <tr>
+        <th class="hide"><input id="tricks" placeholder="0" /></th>
+      </tr>
+      <tr>
+        <th class="hide"><input id="score" placeholder="0" /></th>
+      </tr> -->
+    </table>
+    <button class="show" type="button" onclick="addPlayer()">Add Player</button>
+    <br class="show" />
+    <button class="show" type="button" onclick="startGame()">Start Game</button>
+    <button class="hide" type="button" onclick="startRound()">
+      Start Round
+    </button>
+    <button class="hide" type="button" onclick="endRound()">End Round</button>
+    <button class="hide" type="button" onclick="nextRound()">Next Round</button>
+    <br />
+    <button class="hide" type="button" onclick="newGame()">New Game</button>
+
+    <script>
+      const names = ["Seth", "Gma", "Gpa"];
+      function addPlayer() {
+        document.getElementById("2").innerHTML = names[0];
+      }
+      function startGame() {
+        var table = document.getElementById("table");
+        for (let i in table.rows) {
+          console.log("-");
+          document.getElementById("input" + i).innerHtml = "Player's Name";
+        }
+      }
+      function startRound() {}
+      function endRound() {}
+      function nextRound() {}
+      function newGame() {}
+
+      function myFunction() {
+        document.getElementById("2").innerHTML = names[0];
+        document.getElementById("1-1").className = "hide";
+      }
+    </script>
+  </body>
+</html>

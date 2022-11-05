@@ -1,0 +1,35 @@
+button {
+  margin:  2px 10px 2px 10px;
+  margin-bottom: 0;
+  background-color: #eee;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+
+li {
+  list-style: none;
+}
+
+table,
+th {
+  border: 1px solid;
+}
+
+th {
+  width: 200px;
+  font: 100;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+input {
+  border: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}

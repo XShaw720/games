@@ -1,0 +1,46 @@
+table,
+th {
+  border: 1px solid;
+}
+
+th {
+  width: 100px;
+  height:25px;
+  font: 100;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.single{
+  width: 220px;
+}
+
+.hide {
+  display: none;
+}
+
+#name {
+  width: 100px;
+}
+
+button {
+  margin-top: 5px;
+  width: 240px;
+  background-color: #eee;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+
+input {
+  border: none;
+  width: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}

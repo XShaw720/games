@@ -1,0 +1,15 @@
+<table>
+  <tr *ngFor="let player of players; let i = index">
+    <th>
+      <input
+        id="name"
+        [(ngModel)]="player.name"
+        placeholder="Player {{ i + 1 }}"
+      />
+      <button type="button" (click)="deletePlayer(i)">Delete</button>
+    </th>
+  </tr>
+</table>
+<button type="button" (click)="addPlayer()">Add Player</button>
+<br>
+<button type="button" routerLink="/play">Start</button>

@@ -1,0 +1,40 @@
+<table>
+  <tr>
+    <th class="{{ playerClass }}">Players</th>
+    <th class="{{ bidClass }}">Bid</th>
+    <th class="{{ tricksClass }}">Tricks</th>
+    <th class="{{ scoreClass }}">Score</th>
+  </tr>
+  <tr *ngFor="let player of players; let i = index">
+    <th><input id="name" [(ngModel)]="player.name" placeholder="player {{i+1}}" /></th>
+    <th class="{{ bidClass }}">
+      <input id="bid" [(ngModel)]="player.bid" placeholder="0" />
+    </th>
+    <th class="{{ tricksClass }}">
+      <input id="tricks" [(ngModel)]="player.tricks" placeholder="0" />
+    </th>
+    <th class="{{ scoreClass }}">
+      <input id="score" [(ngModel)]="player.score" placeholder="0" />
+    </th>
+  </tr>
+</table>
+<button class="{{ setupClass }}" type="button" (click)="addPlayer()">
+  Add Player
+</button>
+<br class="{{ setupClass }}" />
+<button class="{{ setupClass }}" type="button" (click)="startGame()">
+  Start Game
+</button>
+<button class="{{ bidClass }}" type="button" (click)="startRound()">
+  Start Round
+</button>
+<button class="{{ tricksClass }}" type="button" (click)="endRound()">
+  End Round
+</button>
+<button class="{{ scoreClass }}" type="button" (click)="nextRound()">
+  Next Round
+</button>
+<br />
+<button class="{{ scoreClass }}" type="button" (click)="newGame()">
+  New Game
+</button>
