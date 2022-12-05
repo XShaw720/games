@@ -3,15 +3,22 @@ button {
   margin-bottom: 0;
   background-color: #eee;
   border-radius: 4px;
-  width: 200px;
   font-size: 1rem;
 }
 button:hover {
   background-color: #cfd8dc;
 }
 
-li {
+ul{
+  padding-left:0;
   list-style: none;
+}
+
+li {
+  background-color: orange;
+  padding:5px;
+  margin-bottom: 10px;
+  border-radius:5px;
 }
 
 table,
@@ -31,5 +38,5 @@ input {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
-  text-align: center;
+  background-color: orange;
 }

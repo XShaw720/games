@@ -27,4 +27,12 @@ export class SetupComponent implements OnInit {
   deletePlayer(index: number){
     this.players.splice(index, 1);
   }
+
+  setPlayers() {
+    this.players = [
+      { name: '', score: 0, bid: 0, tricks: 0 },
+      { name: '', score: 0, bid: 0, tricks: 0 },
+      { name: '', score: 0, bid: 0, tricks: 0 },
+    ];
+  }
 }

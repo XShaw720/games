@@ -1,16 +1,15 @@
-table,
-th {
-  border: 1px solid;
+ul{
+  list-style: none;
+  padding-left:0;
 }
 
-th {
-  width: 100px;
-  height:25px;
-  font: 100;
-  font-weight: bold;
-  font-size: 1em;
-  padding: 0.5rem;
-  font-family: Helvetica, Arial, sans-serif;
+li{
+  display: flex;
+  align-items: center;
+  background-color: orange;
+  padding:5px;
+  margin-bottom: 10px;
+  border-radius:5px;
 }
 
 .single{
@@ -21,16 +20,42 @@ th {
   display: none;
 }
 
+.bid{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  width: 200px;
+  
+}
+
+.tricks{
+  display: flex;
+  align-items: center;
+}
+
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.label{
+  font-weight: bold;
+}
+
+div{
+  padding-right: 10px;
+}
+
 #name {
   width: 100px;
 }
 
 button {
-  margin-top: 5px;
-  width: 240px;
   background-color: #eee;
   border-radius: 4px;
   font-size: 1rem;
+  height: 25px;
 }
 button:hover {
   background-color: #cfd8dc;
@@ -38,9 +63,10 @@ button:hover {
 
 input {
   border: none;
-  width: 40px;
+  width: 20px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+  background-color: orange;
 }
